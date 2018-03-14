@@ -22,14 +22,13 @@ Installation instructions for Debian / Ubuntu OS
 
 
 
-- If you have Arduino.app installed to /Applications/, modify the installation as follows, beginning at `mkdir -p ~/Arduino...`:
+- Then find your Arduino location (replace the x.x.x.x with your version)
 
-```bash
-  cd /Applications/Arduino_*/Contents/java/hardware/
-  mkdir -p espressif && \
-  cd espressif && \
-  git clone https://github.com/espressif/arduino-esp32.git esp32 && \
-  cd esp32 && \
-  git submodule update --init --recursive && \
-  cd tools && \
-  python2 get.py```
+  cd ~/arduino-x.x.x/hardware/
+  mkdir -p espressif 
+  cd espressif 
+  git clone https://github.com/espressif/arduino-esp32.git esp32 
+  cd esp32 
+  git submodule update --init --recursive 
+  cd tools 
+  python2 get.py
